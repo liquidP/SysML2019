@@ -43,6 +43,22 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_0TkTUONpEeiSXKLxC9IEwA" name="Requirement16">
       <nestedClassifier xmi:type="uml:Class" xmi:id="_6kIScONpEeiSXKLxC9IEwA" name="Capteur"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-WSA0O5eEeiub5X9hW-S4w"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_pySi4O5fEeiub5X9hW-S4w" name="Habitant Maison"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_VL0qoO5eEeiub5X9hW-S4w" name="Consulter la consommation éléctrique" classifierBehavior="_JgKNYO5hEeiub5X9hW-S4w">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_JgKNYO5hEeiub5X9hW-S4w" name="Interaction1">
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_gaAS8O5hEeiub5X9hW-S4w" name="Alfred" coveredBy="_UGAf0O5jEeiub5X9hW-S4w _UGavge5jEeiub5X9hW-S4w _UGUo4O5jEeiub5X9hW-S4w"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_ki73MO5hEeiub5X9hW-S4w" name="Habitant" coveredBy="_UF_4wO5jEeiub5X9hW-S4w _UGbWkO5jEeiub5X9hW-S4w"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UF_4wO5jEeiub5X9hW-S4w" name="Message3SendEvent" covered="_ki73MO5hEeiub5X9hW-S4w" message="_UF_RsO5jEeiub5X9hW-S4w"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UGAf0O5jEeiub5X9hW-S4w" name="Message3ReceiveEvent" covered="_gaAS8O5hEeiub5X9hW-S4w" message="_UF_RsO5jEeiub5X9hW-S4w"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_UGUo4O5jEeiub5X9hW-S4w" name="BehaviorExecutionSpecification6" covered="_gaAS8O5hEeiub5X9hW-S4w" finish="_UGavge5jEeiub5X9hW-S4w" start="_UGAf0O5jEeiub5X9hW-S4w"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UGavge5jEeiub5X9hW-S4w" name="Message8SendEvent" covered="_gaAS8O5hEeiub5X9hW-S4w" message="_UGavgO5jEeiub5X9hW-S4w"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UGbWkO5jEeiub5X9hW-S4w" name="Message8ReceiveEvent" covered="_ki73MO5hEeiub5X9hW-S4w" message="_UGavgO5jEeiub5X9hW-S4w"/>
+        <message xmi:type="uml:Message" xmi:id="_UF_RsO5jEeiub5X9hW-S4w" name="Consulter la consommation électrique" receiveEvent="_UGAf0O5jEeiub5X9hW-S4w" sendEvent="_UF_4wO5jEeiub5X9hW-S4w"/>
+        <message xmi:type="uml:Message" xmi:id="_UGavgO5jEeiub5X9hW-S4w" name="&quot;Vous avez consommé : &quot; + conso + &quot; kWatt&quot;" messageSort="reply" receiveEvent="_UGbWkO5jEeiub5X9hW-S4w" sendEvent="_UGavge5jEeiub5X9hW-S4w"/>
+      </ownedBehavior>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_IAOrsO5hEeiub5X9hW-S4w"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UoYqEONgEeiSXKLxC9IEwA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UobtYONgEeiSXKLxC9IEwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
