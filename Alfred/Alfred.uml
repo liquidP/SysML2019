@@ -48,14 +48,14 @@
     <packagedElement xmi:type="uml:UseCase" xmi:id="_VL0qoO5eEeiub5X9hW-S4w" name="Consulter la consommation éléctrique" classifierBehavior="_JgKNYO5hEeiub5X9hW-S4w">
       <ownedBehavior xmi:type="uml:Interaction" xmi:id="_JgKNYO5hEeiub5X9hW-S4w" name="Interaction1">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_d3AH0PkvEeinEbdNPT6CRQ" name="" type="_12mOIPknEeinEbdNPT6CRQ"/>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_gaAS8O5hEeiub5X9hW-S4w" name="Alfred" coveredBy="_UGAf0O5jEeiub5X9hW-S4w _mv2s8PkxEeinEbdNPT6CRQ _KajO0fkyEeinEbdNPT6CRQ _UGUo4O5jEeiub5X9hW-S4w"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_gaAS8O5hEeiub5X9hW-S4w" name="Alfred" coveredBy="_UGAf0O5jEeiub5X9hW-S4w _KajO0fkyEeinEbdNPT6CRQ _mv2s8PkxEeinEbdNPT6CRQ _UGUo4O5jEeiub5X9hW-S4w"/>
         <lifeline xmi:type="uml:Lifeline" xmi:id="_ki73MO5hEeiub5X9hW-S4w" name="Habitant" coveredBy="_UF_4wO5jEeiub5X9hW-S4w _KajO0vkyEeinEbdNPT6CRQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UF_4wO5jEeiub5X9hW-S4w" name="Message3SendEvent" covered="_ki73MO5hEeiub5X9hW-S4w" message="_UF_RsO5jEeiub5X9hW-S4w"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UGAf0O5jEeiub5X9hW-S4w" name="Message3ReceiveEvent" covered="_gaAS8O5hEeiub5X9hW-S4w" message="_UF_RsO5jEeiub5X9hW-S4w"/>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_UGUo4O5jEeiub5X9hW-S4w" name="BehaviorExecutionSpecification6" covered="_gaAS8O5hEeiub5X9hW-S4w" start="_UGAf0O5jEeiub5X9hW-S4w"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mv2s8PkxEeinEbdNPT6CRQ" covered="_gaAS8O5hEeiub5X9hW-S4w"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_KajO0fkyEeinEbdNPT6CRQ" name="Message14SendEvent" covered="_gaAS8O5hEeiub5X9hW-S4w" message="_KajO0PkyEeinEbdNPT6CRQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_KajO0vkyEeinEbdNPT6CRQ" name="Message14ReceiveEvent" covered="_ki73MO5hEeiub5X9hW-S4w" message="_KajO0PkyEeinEbdNPT6CRQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mv2s8PkxEeinEbdNPT6CRQ" covered="_gaAS8O5hEeiub5X9hW-S4w"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_A9WLAPkmEeinEbdNPT6CRQ" name="Message10SendEvent" message="_A9Vj8PkmEeinEbdNPT6CRQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_A9WLAfkmEeinEbdNPT6CRQ" name="Message10ReceiveEvent" message="_A9Vj8PkmEeinEbdNPT6CRQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mv3UAPkxEeinEbdNPT6CRQ"/>
@@ -114,6 +114,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jvcz0vktEeinEbdNPT6CRQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jvcz0_ktEeinEbdNPT6CRQ" value="1"/>
       </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_WmfGgP7gEeiTFroy69zs0w" name="getConso()"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_hhOBsPktEeinEbdNPT6CRQ" name="CompteurElectrique"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_jvcMwPktEeinEbdNPT6CRQ" memberEnd="_jvcz0fktEeinEbdNPT6CRQ _jvcz1PktEeinEbdNPT6CRQ">
@@ -161,6 +162,14 @@
       <message xmi:type="uml:Message" xmi:id="_W25lUPkzEeinEbdNPT6CRQ" name="getConso()" receiveEvent="_W26MYfkzEeinEbdNPT6CRQ" sendEvent="_W26MYPkzEeinEbdNPT6CRQ"/>
       <message xmi:type="uml:Message" xmi:id="_W3LSIPkzEeinEbdNPT6CRQ" name="return conso" messageSort="reply" receiveEvent="_W3LSIvkzEeinEbdNPT6CRQ" sendEvent="_W3LSIfkzEeinEbdNPT6CRQ"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_rZftUP7eEeiTFroy69zs0w" name="Services">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_sGG7sP7eEeiTFroy69zs0w" name="Santé"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_sxjFYP7eEeiTFroy69zs0w" name="Prévision"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_teYWMP7eEeiTFroy69zs0w" name="Alertes"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_5GpScP7hEeiTFroy69zs0w" name="Combinaison Mesures"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_aY45wP7jEeiTFroy69zs0w" name="Afficher CO2"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bO24cP7jEeiTFroy69zs0w" name="Requirement42"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UoYqEONgEeiSXKLxC9IEwA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UobtYONgEeiSXKLxC9IEwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
@@ -239,4 +248,11 @@
   <Blocks:Block xmi:id="_12rGoPknEeinEbdNPT6CRQ" base_Class="_12mOIPknEeinEbdNPT6CRQ"/>
   <Blocks:Block xmi:id="_JPyeIPktEeinEbdNPT6CRQ" base_Class="_JPsXgPktEeinEbdNPT6CRQ"/>
   <Blocks:Block xmi:id="_JQBSMPkuEeinEbdNPT6CRQ" base_Class="_JP9n0PkuEeinEbdNPT6CRQ"/>
+  <Requirements:Requirement xmi:id="_rZuW0P7eEeiTFroy69zs0w" base_Class="_rZftUP7eEeiTFroy69zs0w" id="1" text="Alfred doit pouvoir rendre des services&#xA;"/>
+  <Requirements:Requirement xmi:id="_sGKmEP7eEeiTFroy69zs0w" base_Class="_sGG7sP7eEeiTFroy69zs0w" id="2" text="Alfred peut restituer des mesures de grandeurs physique"/>
+  <Requirements:Requirement xmi:id="_sxmIsP7eEeiTFroy69zs0w" base_Class="_sxjFYP7eEeiTFroy69zs0w" id="5" text="Alfred doit pouvoir faire des prévisions&#xA;"/>
+  <Requirements:Requirement xmi:id="_tedOsP7eEeiTFroy69zs0w" base_Class="_teYWMP7eEeiTFroy69zs0w" id="4" text="Afred peut afficher des conseils et des alertes&#xA;"/>
+  <Requirements:Requirement xmi:id="_5Gtj4P7hEeiTFroy69zs0w" base_Class="_5GpScP7hEeiTFroy69zs0w" id="3" text="Alfred peut restituer des mesures complexes en combinant des mesures de grandeur physiques&#xA;"/>
+  <Requirements:Requirement xmi:id="_aY6u8P7jEeiTFroy69zs0w" base_Class="_aY45wP7jEeiTFroy69zs0w" id="6" text="Alfred afficher le taux de CO2 de l'exterieur"/>
+  <Requirements:Requirement xmi:id="_bO6i0P7jEeiTFroy69zs0w" base_Class="_bO24cP7jEeiTFroy69zs0w"/>
 </xmi:XMI>
