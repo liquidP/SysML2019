@@ -163,13 +163,22 @@
       <message xmi:type="uml:Message" xmi:id="_W3LSIPkzEeinEbdNPT6CRQ" name="return conso" messageSort="reply" receiveEvent="_W3LSIvkzEeinEbdNPT6CRQ" sendEvent="_W3LSIfkzEeinEbdNPT6CRQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_rZftUP7eEeiTFroy69zs0w" name="Services">
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_sGG7sP7eEeiTFroy69zs0w" name="Santé"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_sxjFYP7eEeiTFroy69zs0w" name="Prévision"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_teYWMP7eEeiTFroy69zs0w" name="Alertes"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_5GpScP7hEeiTFroy69zs0w" name="Combinaison Mesures"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_sGG7sP7eEeiTFroy69zs0w" name="Santé">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_aY45wP7jEeiTFroy69zs0w" name="Consommation électrique"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_bO24cP7jEeiTFroy69zs0w" name="Production électrique"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_sxjFYP7eEeiTFroy69zs0w" name="Prévision">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_H_jfIBG0EemG-ozLre_ysQ" name="Prevision Consommation électrique"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_HsW2UBG0EemG-ozLre_ysQ" name="Prevision production électrique"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_teYWMP7eEeiTFroy69zs0w" name="Alertes">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_GD-jQBG0EemG-ozLre_ysQ" name="Conseil Gaspillage"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_GYdlgBG0EemG-ozLre_ysQ" name="Conseil surcharge"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_5GpScP7hEeiTFroy69zs0w" name="Combinaison Mesures">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_EMgrUBG0EemG-ozLre_ysQ" name="Ratio prod/conso électrique"/>
+      </nestedClassifier>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_aY45wP7jEeiTFroy69zs0w" name="Afficher CO2"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_bO24cP7jEeiTFroy69zs0w" name="Requirement42"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UoYqEONgEeiSXKLxC9IEwA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UobtYONgEeiSXKLxC9IEwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
@@ -253,6 +262,11 @@
   <Requirements:Requirement xmi:id="_sxmIsP7eEeiTFroy69zs0w" base_Class="_sxjFYP7eEeiTFroy69zs0w" id="5" text="Alfred doit pouvoir faire des prévisions&#xA;"/>
   <Requirements:Requirement xmi:id="_tedOsP7eEeiTFroy69zs0w" base_Class="_teYWMP7eEeiTFroy69zs0w" id="4" text="Afred peut afficher des conseils et des alertes&#xA;"/>
   <Requirements:Requirement xmi:id="_5Gtj4P7hEeiTFroy69zs0w" base_Class="_5GpScP7hEeiTFroy69zs0w" id="3" text="Alfred peut restituer des mesures complexes en combinant des mesures de grandeur physiques&#xA;"/>
-  <Requirements:Requirement xmi:id="_aY6u8P7jEeiTFroy69zs0w" base_Class="_aY45wP7jEeiTFroy69zs0w" id="6" text="Alfred afficher le taux de CO2 de l'exterieur"/>
-  <Requirements:Requirement xmi:id="_bO6i0P7jEeiTFroy69zs0w" base_Class="_bO24cP7jEeiTFroy69zs0w"/>
+  <Requirements:Requirement xmi:id="_aY6u8P7jEeiTFroy69zs0w" base_Class="_aY45wP7jEeiTFroy69zs0w" id="6" text="Alfred peut afficher la consommation électrique de la maison&#xA;"/>
+  <Requirements:Requirement xmi:id="_bO6i0P7jEeiTFroy69zs0w" base_Class="_bO24cP7jEeiTFroy69zs0w" id="7" text="Alfred peut afficher la production électrique de la maison"/>
+  <Requirements:Requirement xmi:id="_EMmK4BG0EemG-ozLre_ysQ" base_Class="_EMgrUBG0EemG-ozLre_ysQ" id="8" text="Alfred peut afficher le Ratio production/consommation électrique&#xA;"/>
+  <Requirements:Requirement xmi:id="_GEGfEBG0EemG-ozLre_ysQ" base_Class="_GD-jQBG0EemG-ozLre_ysQ" id="9" text="Alfred peut afficher &quot;N'oubliez pas de fermer la fenêtre&quot; sur les écrans de la maison"/>
+  <Requirements:Requirement xmi:id="_GYgo0BG0EemG-ozLre_ysQ" base_Class="_GYdlgBG0EemG-ozLre_ysQ" id="10" text="Alfred peut conseiller de ne pas faire entrer de nouveaux visiteurs&#xA;"/>
+  <Requirements:Requirement xmi:id="_HsZSkBG0EemG-ozLre_ysQ" base_Class="_HsW2UBG0EemG-ozLre_ysQ" id="12" text="Alfred peut afficher la production électrique prévue pour la journée"/>
+  <Requirements:Requirement xmi:id="_H_l7YBG0EemG-ozLre_ysQ" base_Class="_H_jfIBG0EemG-ozLre_ysQ" id="11" text="Alfred peut afficher la consommation électrique prévue pour la journée"/>
 </xmi:XMI>
