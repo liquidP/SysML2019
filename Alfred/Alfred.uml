@@ -46,10 +46,16 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_-WSA0O5eEeiub5X9hW-S4w"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_pySi4O5fEeiub5X9hW-S4w" name="Habitant Maison"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_VL0qoO5eEeiub5X9hW-S4w" name="Consulter la consommation éléctrique" classifierBehavior="_JgKNYO5hEeiub5X9hW-S4w">
-      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_JgKNYO5hEeiub5X9hW-S4w" name="Interaction1">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_JgKNYO5hEeiub5X9hW-S4w" name="DSS6">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_d3AH0PkvEeinEbdNPT6CRQ" name="" type="_12mOIPknEeinEbdNPT6CRQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_WY7j4BWjEem2UOW3v06MqQ" name="" type="_JgKNYO5hEeiub5X9hW-S4w"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Waj7kBWjEem2UOW3v06MqQ" name="" type="_JgKNYO5hEeiub5X9hW-S4w"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_WjnJ4BWjEem2UOW3v06MqQ" name="" type="_JgKNYO5hEeiub5X9hW-S4w"/>
         <lifeline xmi:type="uml:Lifeline" xmi:id="_gaAS8O5hEeiub5X9hW-S4w" name="Alfred" coveredBy="_UGAf0O5jEeiub5X9hW-S4w _KajO0fkyEeinEbdNPT6CRQ _mv2s8PkxEeinEbdNPT6CRQ _UGUo4O5jEeiub5X9hW-S4w"/>
         <lifeline xmi:type="uml:Lifeline" xmi:id="_ki73MO5hEeiub5X9hW-S4w" name="Habitant" coveredBy="_UF_4wO5jEeiub5X9hW-S4w _KajO0vkyEeinEbdNPT6CRQ"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_WY6VwBWjEem2UOW3v06MqQ" name="" represents="_WY7j4BWjEem2UOW3v06MqQ"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_WajUgBWjEem2UOW3v06MqQ" name="" represents="_Waj7kBWjEem2UOW3v06MqQ"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_Wjmi0BWjEem2UOW3v06MqQ" name="" represents="_WjnJ4BWjEem2UOW3v06MqQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UF_4wO5jEeiub5X9hW-S4w" name="Message3SendEvent" covered="_ki73MO5hEeiub5X9hW-S4w" message="_UF_RsO5jEeiub5X9hW-S4w"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UGAf0O5jEeiub5X9hW-S4w" name="Message3ReceiveEvent" covered="_gaAS8O5hEeiub5X9hW-S4w" message="_UF_RsO5jEeiub5X9hW-S4w"/>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_UGUo4O5jEeiub5X9hW-S4w" name="BehaviorExecutionSpecification6" covered="_gaAS8O5hEeiub5X9hW-S4w" start="_UGAf0O5jEeiub5X9hW-S4w"/>
@@ -59,10 +65,10 @@
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_A9WLAPkmEeinEbdNPT6CRQ" name="Message10SendEvent" message="_A9Vj8PkmEeinEbdNPT6CRQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_A9WLAfkmEeinEbdNPT6CRQ" name="Message10ReceiveEvent" message="_A9Vj8PkmEeinEbdNPT6CRQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mv3UAPkxEeinEbdNPT6CRQ"/>
-        <message xmi:type="uml:Message" xmi:id="_UF_RsO5jEeiub5X9hW-S4w" name="afficherConsommation()" receiveEvent="_UGAf0O5jEeiub5X9hW-S4w" sendEvent="_UF_4wO5jEeiub5X9hW-S4w"/>
-        <message xmi:type="uml:Message" xmi:id="_UGavgO5jEeiub5X9hW-S4w" name="&quot;Vous avez consommé : &quot; + conso + &quot; kWatt&quot;" messageSort="reply"/>
-        <message xmi:type="uml:Message" xmi:id="_A9Vj8PkmEeinEbdNPT6CRQ" name="conso = getConsommation()" receiveEvent="_A9WLAfkmEeinEbdNPT6CRQ" sendEvent="_A9WLAPkmEeinEbdNPT6CRQ"/>
-        <message xmi:type="uml:Message" xmi:id="_KajO0PkyEeinEbdNPT6CRQ" name="return conso" messageSort="asynchCall" receiveEvent="_KajO0vkyEeinEbdNPT6CRQ" sendEvent="_KajO0fkyEeinEbdNPT6CRQ"/>
+        <message xmi:type="uml:Message" xmi:id="_UF_RsO5jEeiub5X9hW-S4w" name="afficherTemperature()" receiveEvent="_UGAf0O5jEeiub5X9hW-S4w" sendEvent="_UF_4wO5jEeiub5X9hW-S4w"/>
+        <message xmi:type="uml:Message" xmi:id="_UGavgO5jEeiub5X9hW-S4w" name="&quot;Il fait : &quot; + temp + &quot; degré&quot;" messageSort="reply"/>
+        <message xmi:type="uml:Message" xmi:id="_A9Vj8PkmEeinEbdNPT6CRQ" name="temp = getTemperature()" receiveEvent="_A9WLAfkmEeinEbdNPT6CRQ" sendEvent="_A9WLAPkmEeinEbdNPT6CRQ"/>
+        <message xmi:type="uml:Message" xmi:id="_KajO0PkyEeinEbdNPT6CRQ" name="return temp" messageSort="asynchCall" receiveEvent="_KajO0vkyEeinEbdNPT6CRQ" sendEvent="_KajO0fkyEeinEbdNPT6CRQ"/>
       </ownedBehavior>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_IAOrsO5hEeiub5X9hW-S4w"/>
@@ -82,6 +88,10 @@
         <end xmi:type="uml:ConnectorEnd" xmi:id="_4csNAfkvEeinEbdNPT6CRQ" role="_vTVb0PkvEeinEbdNPT6CRQ"/>
       </ownedConnector>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_SDd3EPkpEeinEbdNPT6CRQ" name="afficherConsommation"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_VkXlUBWhEem2UOW3v06MqQ" name="afficherTemperature"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_5oXMcBWrEem2UOW3v06MqQ" name="afficherHumiditeAir"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_JaZh0BWsEem2UOW3v06MqQ" name="afficherCO2"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_MebTgBWsEem2UOW3v06MqQ" name="afficherQualiteAir"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_12mOIPknEeinEbdNPT6CRQ" name="IHM">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_v0PNo_koEeinEbdNPT6CRQ" name="alfred" type="_GHkXsPknEeinEbdNPT6CRQ">
@@ -93,6 +103,10 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__-X9IvksEeinEbdNPT6CRQ" value="1"/>
       </ownedAttribute>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_HTIhAPkpEeinEbdNPT6CRQ" name="afficherConsommation"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_OquM8BWhEem2UOW3v06MqQ" name="afficherTemperature"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_1WSTQBWrEem2UOW3v06MqQ" name="afficherHumiditeAir"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3j9EsBWrEem2UOW3v06MqQ" name="afficherCO2"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_C-oYQBWsEem2UOW3v06MqQ" name="afficherQualiteAir"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_IM6zQPkqEeinEbdNPT6CRQ" memberEnd="_IM8BYPkqEeinEbdNPT6CRQ _IM8ocPkqEeinEbdNPT6CRQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IM7aUPkqEeinEbdNPT6CRQ" source="org.eclipse.papyrus">
@@ -114,7 +128,23 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jvcz0vktEeinEbdNPT6CRQ"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jvcz0_ktEeinEbdNPT6CRQ" value="1"/>
       </ownedAttribute>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_WmfGgP7gEeiTFroy69zs0w" name="getConso()"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_h3wpkhWhEem2UOW3v06MqQ" name="Thermomètre" type="_cHvywBWhEem2UOW3v06MqQ" association="_h3wCgBWhEem2UOW3v06MqQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h3wpkxWhEem2UOW3v06MqQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h3wplBWhEem2UOW3v06MqQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_WlRdIBWrEem2UOW3v06MqQ" name="Hygrometre" type="_1myC0BWqEem2UOW3v06MqQ" association="_WlQPABWrEem2UOW3v06MqQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WlRdIRWrEem2UOW3v06MqQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WlRdIhWrEem2UOW3v06MqQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_stUSUhWrEem2UOW3v06MqQ" name="Appareil mesure air" type="_ngaIkBWrEem2UOW3v06MqQ" association="_stTrQBWrEem2UOW3v06MqQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_stU5YBWrEem2UOW3v06MqQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_stU5YRWrEem2UOW3v06MqQ" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_WmfGgP7gEeiTFroy69zs0w" name="getConso"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_YeraUBWhEem2UOW3v06MqQ" name="getTemperature"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ScaU4BWsEem2UOW3v06MqQ" name="getCO2"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_UJQRMBWsEem2UOW3v06MqQ" name="getAir"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_yy5UABWsEem2UOW3v06MqQ" name="getHumiditeAir()"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_hhOBsPktEeinEbdNPT6CRQ" name="CompteurElectrique"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_jvcMwPktEeinEbdNPT6CRQ" memberEnd="_jvcz0fktEeinEbdNPT6CRQ _jvcz1PktEeinEbdNPT6CRQ">
@@ -135,11 +165,15 @@
     <packagedElement xmi:type="uml:Actor" xmi:id="_p-eFYPkuEeinEbdNPT6CRQ" name="Mediateur"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_PnhKUPkvEeinEbdNPT6CRQ" name="IhmController"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_2lmIgPkvEeinEbdNPT6CRQ" name="Mediateur1"/>
-    <packagedElement xmi:type="uml:Interaction" xmi:id="_dwr9EPkyEeinEbdNPT6CRQ" name="Interaction39">
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_dwr9EPkyEeinEbdNPT6CRQ" name="Interaction40">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_eRxS8BWkEem2UOW3v06MqQ" name="" type="_dwr9EPkyEeinEbdNPT6CRQ"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_fsXBoBWkEem2UOW3v06MqQ" name="" type="_dwr9EPkyEeinEbdNPT6CRQ"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_m7GeMPkyEeinEbdNPT6CRQ" name="Habitant" coveredBy="_5LV7YPkyEeinEbdNPT6CRQ"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_r1GTAPkyEeinEbdNPT6CRQ" name="Ihm" coveredBy="_J0Bk4PkzEeinEbdNPT6CRQ _OGeRgfkzEeinEbdNPT6CRQ _Pv67kfkzEeinEbdNPT6CRQ"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_vOiUAPkyEeinEbdNPT6CRQ" name="Médiateur" coveredBy="_OGe4kPkzEeinEbdNPT6CRQ _W26MYPkzEeinEbdNPT6CRQ _W3LSIvkzEeinEbdNPT6CRQ _Pv67kPkzEeinEbdNPT6CRQ _LB0NsPkzEeinEbdNPT6CRQ"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_yGpwoPkyEeinEbdNPT6CRQ" name="CompteurElectrique" coveredBy="_W26MYfkzEeinEbdNPT6CRQ _W3LSIfkzEeinEbdNPT6CRQ _W3Jc8PkzEeinEbdNPT6CRQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_eRwr4BWkEem2UOW3v06MqQ" name="" represents="_eRxS8BWkEem2UOW3v06MqQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_fsWakBWkEem2UOW3v06MqQ" name="" represents="_fsXBoBWkEem2UOW3v06MqQ"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5LV7YPkyEeinEbdNPT6CRQ" name="Message5SendEvent" covered="_m7GeMPkyEeinEbdNPT6CRQ" message="_5LVUUPkyEeinEbdNPT6CRQ"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_J0Bk4PkzEeinEbdNPT6CRQ" covered="_r1GTAPkyEeinEbdNPT6CRQ"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_OGeRgfkzEeinEbdNPT6CRQ" name="Message15SendEvent" covered="_r1GTAPkyEeinEbdNPT6CRQ" message="_OGeRgPkzEeinEbdNPT6CRQ"/>
@@ -155,9 +189,9 @@
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_J0Bk4fkzEeinEbdNPT6CRQ"/>
       <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_J0PnUPkzEeinEbdNPT6CRQ"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5LV7YfkyEeinEbdNPT6CRQ" name="Message5ReceiveEvent" message="_5LVUUPkyEeinEbdNPT6CRQ"/>
-      <message xmi:type="uml:Message" xmi:id="_5LVUUPkyEeinEbdNPT6CRQ" name="afficherConso()" receiveEvent="_5LV7YfkyEeinEbdNPT6CRQ" sendEvent="_5LV7YPkyEeinEbdNPT6CRQ"/>
+      <message xmi:type="uml:Message" xmi:id="_5LVUUPkyEeinEbdNPT6CRQ" name="afficherConsommation()" receiveEvent="_5LV7YfkyEeinEbdNPT6CRQ" sendEvent="_5LV7YPkyEeinEbdNPT6CRQ"/>
       <message xmi:type="uml:Message" xmi:id="_5LivsPkyEeinEbdNPT6CRQ" name="return conso" messageSort="reply"/>
-      <message xmi:type="uml:Message" xmi:id="_OGeRgPkzEeinEbdNPT6CRQ" name="afficherConso()" receiveEvent="_OGe4kPkzEeinEbdNPT6CRQ" sendEvent="_OGeRgfkzEeinEbdNPT6CRQ"/>
+      <message xmi:type="uml:Message" xmi:id="_OGeRgPkzEeinEbdNPT6CRQ" name="afficherConsommation()" receiveEvent="_OGe4kPkzEeinEbdNPT6CRQ" sendEvent="_OGeRgfkzEeinEbdNPT6CRQ"/>
       <message xmi:type="uml:Message" xmi:id="_Pv5tcPkzEeinEbdNPT6CRQ" name="return conso" messageSort="reply" receiveEvent="_Pv67kfkzEeinEbdNPT6CRQ" sendEvent="_Pv67kPkzEeinEbdNPT6CRQ"/>
       <message xmi:type="uml:Message" xmi:id="_W25lUPkzEeinEbdNPT6CRQ" name="getConso()" receiveEvent="_W26MYfkzEeinEbdNPT6CRQ" sendEvent="_W26MYPkzEeinEbdNPT6CRQ"/>
       <message xmi:type="uml:Message" xmi:id="_W3LSIPkzEeinEbdNPT6CRQ" name="return conso" messageSort="reply" receiveEvent="_W3LSIvkzEeinEbdNPT6CRQ" sendEvent="_W3LSIfkzEeinEbdNPT6CRQ"/>
@@ -166,19 +200,131 @@
       <nestedClassifier xmi:type="uml:Class" xmi:id="_sGG7sP7eEeiTFroy69zs0w" name="Santé">
         <nestedClassifier xmi:type="uml:Class" xmi:id="_aY45wP7jEeiTFroy69zs0w" name="Consommation électrique"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_bO24cP7jEeiTFroy69zs0w" name="Production électrique"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_kQZm0BWfEem2UOW3v06MqQ" name="Température Maison"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_97zQMBWuEem2UOW3v06MqQ" name="Humidité"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_TDSnUBWvEem2UOW3v06MqQ" name="TauxCo2"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_gEnIkBWvEem2UOW3v06MqQ" name="QualiteAir"/>
       </nestedClassifier>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_sxjFYP7eEeiTFroy69zs0w" name="Prévision">
         <nestedClassifier xmi:type="uml:Class" xmi:id="_H_jfIBG0EemG-ozLre_ysQ" name="Prevision Consommation électrique"/>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_HsW2UBG0EemG-ozLre_ysQ" name="Prevision production électrique"/>
       </nestedClassifier>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_teYWMP7eEeiTFroy69zs0w" name="Alertes">
         <nestedClassifier xmi:type="uml:Class" xmi:id="_GD-jQBG0EemG-ozLre_ysQ" name="Conseil Gaspillage"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_GYdlgBG0EemG-ozLre_ysQ" name="Conseil surcharge"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_0J0WkBWfEem2UOW3v06MqQ" name="Conseil température"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_29HxYBWvEem2UOW3v06MqQ" name="ConseilCo2"/>
       </nestedClassifier>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_5GpScP7hEeiTFroy69zs0w" name="Combinaison Mesures">
         <nestedClassifier xmi:type="uml:Class" xmi:id="_EMgrUBG0EemG-ozLre_ysQ" name="Ratio prod/conso électrique"/>
       </nestedClassifier>
     </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_mnAuUBWeEem2UOW3v06MqQ" name="Consulter température de la maison" classifierBehavior="_mnAuURWeEem2UOW3v06MqQ">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_mnAuURWeEem2UOW3v06MqQ" name="Interaction1">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_mnAuUhWeEem2UOW3v06MqQ" name="" type="_12mOIPknEeinEbdNPT6CRQ"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_mnAuUxWeEem2UOW3v06MqQ" name="Alfred" coveredBy="_mnAuVhWeEem2UOW3v06MqQ _mnAuWBWeEem2UOW3v06MqQ _mnAuWhWeEem2UOW3v06MqQ _mnAuVxWeEem2UOW3v06MqQ"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_mnAuVBWeEem2UOW3v06MqQ" name="Habitant" coveredBy="_mnAuVRWeEem2UOW3v06MqQ _mnAuWRWeEem2UOW3v06MqQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mnAuVRWeEem2UOW3v06MqQ" name="Message3SendEvent" covered="_mnAuVBWeEem2UOW3v06MqQ" message="_mnAuXhWeEem2UOW3v06MqQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mnAuVhWeEem2UOW3v06MqQ" name="Message3ReceiveEvent" covered="_mnAuUxWeEem2UOW3v06MqQ" message="_mnAuXhWeEem2UOW3v06MqQ"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_mnAuVxWeEem2UOW3v06MqQ" name="BehaviorExecutionSpecification6" covered="_mnAuUxWeEem2UOW3v06MqQ" start="_mnAuVhWeEem2UOW3v06MqQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mnAuWBWeEem2UOW3v06MqQ" name="Message14SendEvent" covered="_mnAuUxWeEem2UOW3v06MqQ" message="_mnAuYRWeEem2UOW3v06MqQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mnAuWRWeEem2UOW3v06MqQ" name="Message14ReceiveEvent" covered="_mnAuVBWeEem2UOW3v06MqQ" message="_mnAuYRWeEem2UOW3v06MqQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mnAuWhWeEem2UOW3v06MqQ" covered="_mnAuUxWeEem2UOW3v06MqQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mnAuWxWeEem2UOW3v06MqQ" name="Message10SendEvent" message="_mnAuYBWeEem2UOW3v06MqQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mnAuXBWeEem2UOW3v06MqQ" name="Message10ReceiveEvent" message="_mnAuYBWeEem2UOW3v06MqQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mnAuXRWeEem2UOW3v06MqQ"/>
+        <message xmi:type="uml:Message" xmi:id="_mnAuXhWeEem2UOW3v06MqQ" name="afficherConsommation()" receiveEvent="_mnAuVhWeEem2UOW3v06MqQ" sendEvent="_mnAuVRWeEem2UOW3v06MqQ"/>
+        <message xmi:type="uml:Message" xmi:id="_mnAuXxWeEem2UOW3v06MqQ" name="&quot;Vous avez consommé : &quot; + conso + &quot; kWatt&quot;" messageSort="reply"/>
+        <message xmi:type="uml:Message" xmi:id="_mnAuYBWeEem2UOW3v06MqQ" name="conso = getConsommation()" receiveEvent="_mnAuXBWeEem2UOW3v06MqQ" sendEvent="_mnAuWxWeEem2UOW3v06MqQ"/>
+        <message xmi:type="uml:Message" xmi:id="_mnAuYRWeEem2UOW3v06MqQ" name="return conso" messageSort="asynchCall" receiveEvent="_mnAuWRWeEem2UOW3v06MqQ" sendEvent="_mnAuWBWeEem2UOW3v06MqQ"/>
+      </ownedBehavior>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_qOdWIBWeEem2UOW3v06MqQ" name="Thermomètre"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_DHXJYBWfEem2UOW3v06MqQ" memberEnd="_DHaMsBWfEem2UOW3v06MqQ _DHazwBWfEem2UOW3v06MqQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DHZloBWfEem2UOW3v06MqQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DHZloRWfEem2UOW3v06MqQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_DHaMsBWfEem2UOW3v06MqQ" name="consulter température de la maison" type="_mnAuUBWeEem2UOW3v06MqQ" association="_DHXJYBWfEem2UOW3v06MqQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_DHazwBWfEem2UOW3v06MqQ" name="thermomètre" type="_qOdWIBWeEem2UOW3v06MqQ" association="_DHXJYBWfEem2UOW3v06MqQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NitG4BWfEem2UOW3v06MqQ" memberEnd="_NiuVAhWfEem2UOW3v06MqQ _Niu8EBWfEem2UOW3v06MqQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NiuVABWfEem2UOW3v06MqQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NiuVARWfEem2UOW3v06MqQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_NiuVAhWfEem2UOW3v06MqQ" name="consulter température de la maison" type="_mnAuUBWeEem2UOW3v06MqQ" association="_NitG4BWfEem2UOW3v06MqQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Niu8EBWfEem2UOW3v06MqQ" name="habitant maison" type="_pySi4O5fEeiub5X9hW-S4w" association="_NitG4BWfEem2UOW3v06MqQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_cHvywBWhEem2UOW3v06MqQ" name="Actor45"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_h3wCgBWhEem2UOW3v06MqQ" visibility="protected" memberEnd="_h3wpkhWhEem2UOW3v06MqQ _h3wplRWhEem2UOW3v06MqQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_h3wpkBWhEem2UOW3v06MqQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_h3wpkRWhEem2UOW3v06MqQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_h3wplRWhEem2UOW3v06MqQ" name="médiateur" type="_JPsXgPktEeinEbdNPT6CRQ" association="_h3wCgBWhEem2UOW3v06MqQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_vXehkBWiEem2UOW3v06MqQ" name="Interaction47">
+      <message xmi:type="uml:Message" xmi:id="_xiC7sBWiEem2UOW3v06MqQ" name="&quot;Vous avez consommé : &quot; + conso + &quot; kWatt&quot;" messageSort="reply"/>
+      <message xmi:type="uml:Message" xmi:id="_zkMZoBWiEem2UOW3v06MqQ" name="CopyOf_&quot;Vous avez consommé : &quot; + conso + &quot; kWatt&quot;_1" messageSort="reply"/>
+      <message xmi:type="uml:Message" xmi:id="_4bEpAhWiEem2UOW3v06MqQ" name="CopyOf_&quot;Vous avez consommé : &quot; + conso + &quot; kWatt&quot;_2" messageSort="reply"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_uqJPkBWkEem2UOW3v06MqQ" name="Interaction48"/>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_lV3V4BWmEem2UOW3v06MqQ" name="Interaction49">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_zYjNgBWmEem2UOW3v06MqQ" name="" type="_lV3V4BWmEem2UOW3v06MqQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_tfcFEBWmEem2UOW3v06MqQ" name="Habitant" coveredBy="_CTj0QBWnEem2UOW3v06MqQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_zYimcBWmEem2UOW3v06MqQ" name="" represents="_zYjNgBWmEem2UOW3v06MqQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_2KWmwBWmEem2UOW3v06MqQ" name="IHM" coveredBy="_CTkbUBWnEem2UOW3v06MqQ _OKsaUBWnEem2UOW3v06MqQ _OK-HIBWnEem2UOW3v06MqQ _CTxPoBWnEem2UOW3v06MqQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_4xircBWmEem2UOW3v06MqQ" name="Médiateur" coveredBy="_iONzABWnEem2UOW3v06MqQ _kOYT8BWnEem2UOW3v06MqQ _kOrO4RWnEem2UOW3v06MqQ _OK9gERWnEem2UOW3v06MqQ _OK7D0BWnEem2UOW3v06MqQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_7E08sBWmEem2UOW3v06MqQ" name="Thermomètre" coveredBy="_kOY7ABWnEem2UOW3v06MqQ _kOrO4BWnEem2UOW3v06MqQ _kOoLkBWnEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_CTj0QBWnEem2UOW3v06MqQ" name="Message7SendEvent" covered="_tfcFEBWmEem2UOW3v06MqQ" message="_CTimIBWnEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_CTkbUBWnEem2UOW3v06MqQ" name="Message7ReceiveEvent" covered="_2KWmwBWmEem2UOW3v06MqQ" message="_CTimIBWnEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_CTxPoBWnEem2UOW3v06MqQ" name="BehaviorExecutionSpecification10" covered="_2KWmwBWmEem2UOW3v06MqQ" start="_CTkbUBWnEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_OKsaUBWnEem2UOW3v06MqQ" name="Message14SendEvent" covered="_2KWmwBWmEem2UOW3v06MqQ" message="_OKrMMBWnEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_iONzABWnEem2UOW3v06MqQ" covered="_4xircBWmEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_kOYT8BWnEem2UOW3v06MqQ" name="Message21SendEvent" covered="_4xircBWmEem2UOW3v06MqQ" message="_kOXs4BWnEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_kOY7ABWnEem2UOW3v06MqQ" name="Message21ReceiveEvent" covered="_7E08sBWmEem2UOW3v06MqQ" message="_kOXs4BWnEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_kOoLkBWnEem2UOW3v06MqQ" name="BehaviorExecutionSpecification24" covered="_7E08sBWmEem2UOW3v06MqQ" finish="_kOrO4BWnEem2UOW3v06MqQ" start="_kOY7ABWnEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_kOrO4BWnEem2UOW3v06MqQ" name="Message26SendEvent" covered="_7E08sBWmEem2UOW3v06MqQ" message="_kOqn0BWnEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_kOrO4RWnEem2UOW3v06MqQ" name="Message26ReceiveEvent" covered="_4xircBWmEem2UOW3v06MqQ" message="_kOqn0BWnEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_OK9gERWnEem2UOW3v06MqQ" name="Message19SendEvent" covered="_4xircBWmEem2UOW3v06MqQ" message="_OK9gEBWnEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_OK-HIBWnEem2UOW3v06MqQ" name="Message19ReceiveEvent" covered="_2KWmwBWmEem2UOW3v06MqQ" message="_OK9gEBWnEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_iONzARWnEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_OKtBYBWnEem2UOW3v06MqQ" name="Message14ReceiveEvent" message="_OKrMMBWnEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_OK7D0BWnEem2UOW3v06MqQ" name="BehaviorExecutionSpecification17" covered="_4xircBWmEem2UOW3v06MqQ" finish="_OK9gERWnEem2UOW3v06MqQ" start="_OKtBYBWnEem2UOW3v06MqQ"/>
+      <message xmi:type="uml:Message" xmi:id="_CTimIBWnEem2UOW3v06MqQ" name="afficherTemperature()" receiveEvent="_CTkbUBWnEem2UOW3v06MqQ" sendEvent="_CTj0QBWnEem2UOW3v06MqQ"/>
+      <message xmi:type="uml:Message" xmi:id="_CT4kYBWnEem2UOW3v06MqQ" name="return temp" messageSort="reply"/>
+      <message xmi:type="uml:Message" xmi:id="_OKrMMBWnEem2UOW3v06MqQ" name="afficherTemperature()" receiveEvent="_OKtBYBWnEem2UOW3v06MqQ" sendEvent="_OKsaUBWnEem2UOW3v06MqQ"/>
+      <message xmi:type="uml:Message" xmi:id="_OK9gEBWnEem2UOW3v06MqQ" name="return temp" messageSort="reply" receiveEvent="_OK-HIBWnEem2UOW3v06MqQ" sendEvent="_OK9gERWnEem2UOW3v06MqQ"/>
+      <message xmi:type="uml:Message" xmi:id="_kOXs4BWnEem2UOW3v06MqQ" name="getTemperature()" receiveEvent="_kOY7ABWnEem2UOW3v06MqQ" sendEvent="_kOYT8BWnEem2UOW3v06MqQ"/>
+      <message xmi:type="uml:Message" xmi:id="_kOqn0BWnEem2UOW3v06MqQ" name="return temp" messageSort="reply" receiveEvent="_kOrO4RWnEem2UOW3v06MqQ" sendEvent="_kOrO4BWnEem2UOW3v06MqQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_1Kz_4BWnEem2UOW3v06MqQ" name="Interaction50">
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_7_IMUBWnEem2UOW3v06MqQ" name="Habitant" coveredBy="_saSwABWoEem2UOW3v06MqQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_ex3LcBWoEem2UOW3v06MqQ" name="Alfred" coveredBy="_saTXEBWoEem2UOW3v06MqQ _f798MBWqEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_saSwABWoEem2UOW3v06MqQ" name="Message3SendEvent" covered="_7_IMUBWnEem2UOW3v06MqQ" message="_saSI8BWoEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_saTXEBWoEem2UOW3v06MqQ" name="Message3ReceiveEvent" covered="_ex3LcBWoEem2UOW3v06MqQ" message="_saSI8BWoEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_saar0BWoEem2UOW3v06MqQ" name="BehaviorExecutionSpecification6" start="_saTXEBWoEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_f798MBWqEem2UOW3v06MqQ" name="Message12ReceiveEvent" covered="_ex3LcBWoEem2UOW3v06MqQ" message="_f78HABWqEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_WPQmUBWqEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_WPRNYBWqEem2UOW3v06MqQ"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_WPeBsBWqEem2UOW3v06MqQ"/>
+      <message xmi:type="uml:Message" xmi:id="_saSI8BWoEem2UOW3v06MqQ" name="afficherConsommation()" receiveEvent="_saTXEBWoEem2UOW3v06MqQ" sendEvent="_saSwABWoEem2UOW3v06MqQ"/>
+      <message xmi:type="uml:Message" xmi:id="_sachABWoEem2UOW3v06MqQ" name="&quot;Vous avez consommé:&quot; + conso + &quot;kWatt&quot;" messageSort="reply"/>
+      <message xmi:type="uml:Message" xmi:id="_2Qp7sBWpEem2UOW3v06MqQ" name="return conso" messageSort="asynchCall"/>
+      <message xmi:type="uml:Message" xmi:id="_f78HABWqEem2UOW3v06MqQ" name="conso = getConso()" receiveEvent="_f798MBWqEem2UOW3v06MqQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_1myC0BWqEem2UOW3v06MqQ" name="Actor51"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WlQPABWrEem2UOW3v06MqQ" memberEnd="_WlRdIBWrEem2UOW3v06MqQ _WlRdIxWrEem2UOW3v06MqQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WlQ2EBWrEem2UOW3v06MqQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WlQ2ERWrEem2UOW3v06MqQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_WlRdIxWrEem2UOW3v06MqQ" name="médiateur" type="_JPsXgPktEeinEbdNPT6CRQ" association="_WlQPABWrEem2UOW3v06MqQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_ngaIkBWrEem2UOW3v06MqQ" name="Actor53"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_stTrQBWrEem2UOW3v06MqQ" memberEnd="_stUSUhWrEem2UOW3v06MqQ _stU5YhWrEem2UOW3v06MqQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_stUSUBWrEem2UOW3v06MqQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_stUSURWrEem2UOW3v06MqQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_stU5YhWrEem2UOW3v06MqQ" name="médiateur" type="_JPsXgPktEeinEbdNPT6CRQ" association="_stTrQBWrEem2UOW3v06MqQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_HsW2UBG0EemG-ozLre_ysQ" name="Prevision production électrique"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UoYqEONgEeiSXKLxC9IEwA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UobtYONgEeiSXKLxC9IEwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
@@ -269,4 +415,10 @@
   <Requirements:Requirement xmi:id="_GYgo0BG0EemG-ozLre_ysQ" base_Class="_GYdlgBG0EemG-ozLre_ysQ" id="10" text="Alfred peut conseiller de ne pas faire entrer de nouveaux visiteurs&#xA;"/>
   <Requirements:Requirement xmi:id="_HsZSkBG0EemG-ozLre_ysQ" base_Class="_HsW2UBG0EemG-ozLre_ysQ" id="12" text="Alfred peut afficher la production électrique prévue pour la journée"/>
   <Requirements:Requirement xmi:id="_H_l7YBG0EemG-ozLre_ysQ" base_Class="_H_jfIBG0EemG-ozLre_ysQ" id="11" text="Alfred peut afficher la consommation électrique prévue pour la journée"/>
+  <Requirements:Requirement xmi:id="_kQefUBWfEem2UOW3v06MqQ" base_Class="_kQZm0BWfEem2UOW3v06MqQ" text="Alfred peut afficher la température de la maison"/>
+  <Requirements:Requirement xmi:id="_0J3Z4BWfEem2UOW3v06MqQ" base_Class="_0J0WkBWfEem2UOW3v06MqQ" text="Alfred peut conseiller de couper le chauffage le soir avant d'aller au lit&#xA;"/>
+  <Requirements:Requirement xmi:id="_972TgBWuEem2UOW3v06MqQ" base_Class="_97zQMBWuEem2UOW3v06MqQ" text="Alfred peut afficher le taux d'humidité de la maison"/>
+  <Requirements:Requirement xmi:id="_TDVqoBWvEem2UOW3v06MqQ" base_Class="_TDSnUBWvEem2UOW3v06MqQ" text="Alfred doit pouvoir afficher le taux de Co2"/>
+  <Requirements:Requirement xmi:id="_gEsoIBWvEem2UOW3v06MqQ" base_Class="_gEnIkBWvEem2UOW3v06MqQ" text="Alfred peut afficher la qualité de l'air"/>
+  <Requirements:Requirement xmi:id="_29KNoBWvEem2UOW3v06MqQ" base_Class="_29HxYBWvEem2UOW3v06MqQ" text="Alfred peut lancer un avertissement si l'air est de mauvaise qualité ou contient trop de Co2"/>
 </xmi:XMI>
